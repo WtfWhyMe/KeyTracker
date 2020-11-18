@@ -1,0 +1,7 @@
+14/10/20
+	Researching about BLE and trying it to work 
+		https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/
+		https://www.arduino.cc/en/Reference/ArduinoBLE
+		https://electropeak.com/learn/esp32-bluetooth-low-energy-ble-on-arduino-ide-tutorial/
+	how to add esp32 boar to arduino ide
+		https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
