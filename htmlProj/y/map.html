@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- code taken from w3schools  https://www.w3schools.com/css/default.asp -->
+    <style>
+      .button {
+        background-color: #428df5;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      .myDiv {
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <body style ="background-color: lightgreen;">
+    <h1>Device Location Map Y4 project</h1>
+      <div class="mydiv">
+        <div id="googleMap" style="width:100%;height:400px"></div>
+        <div style="border: 2px outset green;background-color: lightblue; text-align: center; margin: 1%;">
+          <p1>
+            Co-oridinates of marker №1 are:(lat,long) (<span id="lat0"></span>, <span id="long0"></span>)<br>
+            Co-oridinates of marker №2 are:(lat,long) (<span id="lat1"></span>, <span id="long1"></span>)<br>
+            Co-oridinates of marker №3 are:(lat,long) (<span id="lat2"></span>, <span id="long2"></span>)<br>
+          </p1>
+        </div>
+        <div style="margin: 0% 45%">
+          <a href="index.html" class="button">Back to home page</a>
+        </div>
+      </div>
+<!-- code for the map is taken from w3schools https://www.w3schools.com/graphics/google_maps_intro.asp
+and developers.google https://developers.google.com/maps/documentation/javascript/markers-->
+      <script>
+        function myMap() {
+          var options= {
+            center:new google.maps.LatLng(53.455349,-7.859966),
+            zoom:7,
+          };
+          var map = new google.maps.Map(document.getElementById('googleMap'),options);
+
+          var location = [
+            [53.275068,-9.049151, "marker №"],
+            [53.348092,-6.266368, "marker №"],
+            [51.890054,-8.454660, "marker №"]
+          ];
+
+          for(i = 0; i < location.length; i++){
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(location[i][0], location[i][1]),
+                title: location[i][2] + (i+1),
+                draggable: false,
+                map: map
+            });
+            document.getElementById("lat"+i).innerHTML = location[i][0];
+            document.getElementById("long"+i).innerHTML = location[i][1];
+          }
+        }// end of myMap()
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmxk9MzZ3nhm7GH3fnUKWFa2x4lwXNcQ&callback=myMap"></script>
+
+  </body>
+</html>
