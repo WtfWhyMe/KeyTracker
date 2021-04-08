@@ -3,5 +3,33 @@
 		https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/
 		https://www.arduino.cc/en/Reference/ArduinoBLE
 		https://electropeak.com/learn/esp32-bluetooth-low-energy-ble-on-arduino-ide-tutorial/
-	how to add esp32 boar to arduino ide
+	how to add esp32 board to arduino ide
 		https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/
+19/12/20
+	https://www.w3schools.com/graphics/google_maps_intro.asp
+	https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+	https://developers.google.com/maps/documentation/javascript/markers
+
+27/01/21
+	Researching about gps module
+		(datasheet) https://www.epitran.it/ebayDrive/datasheet/NEO6MV2.pdf
+		https://iotdesignpro.com/projects/esp32-gps-tracker-iot-based-vehicle-tracking-system
+	seraching libs for gps
+		https://www.arduino.cc/search?q=gps%20&tab=reference
+	looking for rx/tx pin numbers
+		https://components101.com/microcontrollers/esp32-devkitc
+
+06/03/21
+	Look how to send messages to sigfox
+		https://github.com/luisomoreau/arduinoUno-wisol/blob/master/sigfox-hello-world/sigfox-hello-world.ino
+
+29/03/21
+	Researching how to connect sigfox to google cloud
+		https://cloud.google.com/community/tutorials/sigfox-gw
+13/03/21
+	Researching how to connect sigfox to aws
+		https://aws.amazon.com/blogs/iot/connect-your-devices-to-aws-iot-using-the-sigfox-network/
+14/03/21
+	Host website on aws
+		https://aws.amazon.com/getting-started/hands-on/host-static-website/
+		https://medium.com/@kyle.galbraith/how-to-host-a-website-on-s3-without-getting-lost-in-the-sea-e2b82aa6cd38#
